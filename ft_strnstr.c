@@ -24,6 +24,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 		return (NULL);
 	if (!needle[0])
 		return ((char *)(haystack));
+	(void)len_total;
 	while (haystack[i] && i < len)
 	{
 		j = 0;
